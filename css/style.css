@@ -310,9 +310,12 @@ padding-bottom: 50px;
 .heider-section-item .heider-info{ 
     width: 100%;
     text-align: center;
+    
 }
 .heider-section-item .heider-info h1{ 
     font-size: 25px;
+    text-align: center;
+   
 
 }
 .heider-section-item .heider-info p{ 
@@ -384,6 +387,12 @@ padding-bottom: 50px;
 
 .heider-section-item .heider-info h1{ 
     font-size: 25px;
+   
+
+}
+.heider-section-item .heider-info P{ 
+   padding: 0;
+   
 
 }
 
