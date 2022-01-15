@@ -1,0 +1,313 @@
+/*==============================  
+        Common Css Start
+============================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;700&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+.container{
+    width: 1150px;
+    margin: 0 auto;
+
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*==============================  
+        Common Css End
+============================== */
+
+
+
+
+
+/*==============================  
+        Nabvar Css Start
+============================== */
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.nav-logo {
+    width: 50%;
+}
+.nav-logo h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    }
+
+ 
+    
+    .nav-list ul{
+        display: flex;
+    }
+    
+    .nav-list ul li{
+       margin-right: 34px;
+    }
+    .nav-list ul li a{
+        font-size: 16px;
+        color: #3A3A3A;
+    }
+
+
+
+/*==============================  
+        Nabvar Css End
+============================== */
+
+
+
+/*==============================  
+        Header Css Start
+============================== */
+
+
+.heider-section-item{
+    display: flex;
+    margin-bottom: 100px;
+
+}
+.heider-info{
+    width: 55%;
+}
+.heider-info h1{
+font-weight: bold;
+font-size: 52px;
+
+}
+.heider-info p{
+    padding-right: 100px;
+    font-weight: 600;
+font-size: 16px;
+margin-bottom: 30px;
+}
+
+.heider-info a{
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 50px;
+}
+.heider-info a span{
+    padding-right: 15px;
+}
+.heider-img img{
+    width: 440px;
+    margin-left: 30px;
+    transition: all linear 0.4s;
+}
+.heider-img img:hover{
+    max-width: 440px;
+   transform: scale(1.2);
+}
+
+
+/*==============================  
+        Header Css End
+============================== */
+
+
+
+
+
+/*==============================  
+         Brand Logo css Start 
+
+============================== */
+.brand-item{
+    margin-bottom: 100px;
+}
+
+hr{
+
+    color: rgb(255, 255, 255);
+    height: 0.1px;
+    
+}
+
+.brand-logo{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+/*==============================  
+            Brand Logo css end 
+============================== */
+
+
+
+
+
+/*==============================  
+            Collection css Start 
+============================== */
+.collection-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.collection-item{
+    
+    box-shadow: 1px 1px 40px  rgb(141, 138, 138);
+    padding: 25px;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+.collection-title{
+    font-weight: 600;
+font-size: 28px;
+text-align: center;
+}
+.collection-item-img img{
+width: 300px;
+transition: all linear 0.4s;
+}
+.collection-item-img img:hover{
+
+transform: scale(1.1);
+max-width: 300px;
+
+}
+
+.fa-star{
+font-size: 16px;
+color: orange;
+}
+.star-col{
+font-size: 16px;
+color: rgb(108, 111, 112);
+}
+
+.see-more{
+    color: #E02C6D;
+     text-align: left;
+     display: flex;
+     align-items: center;
+     justify-content: end;
+     margin-right: 30px;
+}
+
+
+
+
+
+/*==============================  
+            Collection css end 
+============================== */
+
+
+
+
+
+
+
+.footer-bg{
+    background-color: rgb(10, 8, 38);
+}
+.footer-bg h1{
+   color: #fff;
+   text-align: center;
+   padding-top: 50px;
+   line-height: 20px;
+}
+.footer-bg p{
+   color: #fff;
+   text-align: center;
+   line-height: 10px;
+}
+.footer-icon{
+  text-align: center;
+padding-bottom: 50px;
+   
+}
+.footer-icon i{
+   margin-right: 15px;
+   color: rgb(255, 255, 255);
+
+   text-align: center;
+}
+
+
+
+
+/* .footer-icon .fab{
+   color: #fff;
+} */
+
+
+
+
+@media only screen and (max-width:667px){
+    .container{
+        width: 100%;
+    }
+    .nav-list{
+        display: none;
+        
+    }
+    .nav-logo{
+        text-align: center;
+        width: 100%;
+    }
+.heider-section-item{
+    display: flex;
+    flex-direction: column;
+}
+.heider-section-item .heider-info{ 
+    width: 100%;
+    text-align: center;
+}
+.heider-section-item .heider-info h1{ 
+    font-size: 25px;
+
+}
+.heider-section-item .heider-info p{ 
+    text-align: center;
+    padding: 0;
+
+}
+
+.heider-img img{
+    margin-top: 20px;
+    width: 300px;
+    padding: 0;
+}
+
+.collection-title h1{
+    font-size: 25px;
+
+}
+.collection-items{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+.brand-item{
+        display: none;
+    }
+    
+}
