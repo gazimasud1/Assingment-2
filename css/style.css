@@ -213,6 +213,38 @@ color: rgb(108, 111, 112);
 
 
 
+
+
+.product-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product-item{
+    
+    box-shadow: 1px 1px 40px  rgb(141, 138, 138);
+    padding: 25px;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+.product-title{
+    font-weight: 600;
+font-size: 28px;
+text-align: center;
+}
+.product-item-img img{
+width: 300px;
+transition: all linear 0.4s;
+height: 256px;
+}
+.product-item-img img:hover{
+
+transform: scale(1.1);
+max-width: 300px;
+
+}
+
 /*==============================  
             Collection css end 
 ============================== */
@@ -257,9 +289,9 @@ padding-bottom: 50px;
 } */
 
 
+/* Small Device Media query */
 
-
-@media only screen and (max-width:667px){
+@media only screen and (max-width:688px){
     .container{
         width: 100%;
     }
@@ -300,12 +332,17 @@ padding-bottom: 50px;
 
 }
 .collection-item{
- padding: 10px;
+ padding: 20px;
+ padding-left: 30px;
  margin-left: 10px;
 }
 .collection-items{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+}
+.product-items{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -315,3 +352,72 @@ padding-bottom: 50px;
     }
     
 }
+
+
+
+/* Tab Device Media query */
+
+@media only screen and (min-width:689px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+
+    .nav-logo{
+        
+      padding-left: 20px;
+    }
+    .nav-logo h1{
+        
+    font-size: 20px;
+    }
+    .nav-list{
+        margin-left: -100px;
+    }
+    .nav-list ul li a{
+        font-size: 14px;
+    }
+.heider-section-item{
+    display: flex;
+    padding-left: 30px;
+  
+}
+
+.heider-section-item .heider-info h1{ 
+    font-size: 25px;
+
+}
+
+
+.heider-img img{
+    margin-top: 20px;
+    width: 300px;
+    padding: 0;
+}
+
+.brand-item{
+    margin: 0 20px;
+}
+
+.collection-title h1{
+    font-size: 25px;
+
+}
+.collection-item{
+ padding: 20px;
+ padding-left: 30px;
+ margin-left: 10px;
+}
+.collection-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.product-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+    
+} 
